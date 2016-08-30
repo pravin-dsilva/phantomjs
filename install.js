@@ -438,7 +438,12 @@ function getDownloadSpec() {
   if (platform === 'linux' && arch === 'x64') {
     downloadUrl += 'linux-x86_64.tar.bz2'
     checksum = 'a1d9628118e270f26c4ddd1d7f3502a93b48ede334b8585d11c1c3ae7bc7163a'
-  } else if (platform === 'linux' && arch == 'ia32') {
+  }
+   else if (platform === 'linux' && arch === 'ppc64') {
+    downloadUrl += 'linux-x86_64.tar.bz2'
+    checksum = 'a1d9628118e270f26c4ddd1d7f3502a93b48ede334b8585d11c1c3ae7bc7163a'
+  }
+  else if (platform === 'linux' && arch == 'ia32') {
     downloadUrl += 'linux-i686.tar.bz2'
     checksum = '4102450bb658157e9aef3e229828fade0aaa0de0663802b31a0edff4b5aedf85'
   } else if (platform === 'darwin' || platform === 'openbsd' || platform === 'freebsd') {
